@@ -179,4 +179,46 @@ fun main() {
     }
 
 
+    // while loop refresher
+    var feltTemp = "cold"
+    var roomTemp = 65
+    while (feltTemp == "cold") {
+        roomTemp++
+        if (roomTemp == 70) {
+            feltTemp = "warm"
+            println(feltTemp)
+            break;
+        }
+        println(roomTemp)
+    }
+
+    // for loop in kotlin
+    // prints 1 - 10
+    for (num in 1..10) {
+        println(num)
+    }
+
+    // prints 1 - 9
+    for (i in 1 until 10) {
+        println(i)
+    }
+
+    // prints 10 - 1
+    for (j in 10 downTo 1) {
+        println(j)
+    }
+
+    // prints 10 - 1 --> 10, 8, 6, 4, 2
+    for (j in 10 downTo 1 step 2) {
+        println(j)
+    }
+
+    // same as the for loop prior
+    for (k in 10.downTo(1).step(2)) {
+        println(k)
+    }
+
+
+
+
 }
