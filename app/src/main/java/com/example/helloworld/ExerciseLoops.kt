@@ -34,4 +34,11 @@ fun main() {
         }
     }
 
+    var x = 0
+    for (y in 0..9) {
+        x += y
+    }
+
+    println("$x")
+
 }
