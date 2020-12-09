@@ -75,8 +75,20 @@ fun main() {
     result = (a / b).toInt() //--> 1
     var resultDouble: Double
     resultDouble = a / b // --> 1.6666666667
-    print(resultDouble)
+    // println(resultDouble)
 
+
+    // Comparison Operators
+    val isEqual = 5==3 // --> false
+    println("isEqual is $isEqual")
+
+    val isNotEqual = 5!=5 // --> false
+    println("isNotEqual is $isNotEqual")
+
+    // new way to write comparison in print line
+    println("is5Greater3 ${5 > 3}")
+    println("is5Greater3 ${-5 > 3}")
+    println("is5LowerEqual3 ${5 <= 3}")
 
 
 
