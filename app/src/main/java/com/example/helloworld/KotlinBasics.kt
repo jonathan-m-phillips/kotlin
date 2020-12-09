@@ -131,9 +131,52 @@ fun main() {
         println("you are too young")
     }
 
+    when (age) {
+        15 -> println("You are too young")
+        16 -> println("You can drive")
+        18 -> println("You can vote")
+        21 -> println("You can drink")
+    }
+
+    // OR
+
+    when (age) {
+        in 1..15 -> println("You are too young")
+        16, 17 -> println("You can drive")
+        in 18..20 -> println("You can vote")
+        !in 0..20 -> println("You can drink")
+        //in 21..120 -> println("You can drink")
+    }
 
 
+    var season = 3
+    when (season) {
+        1 -> println("Spring")
+        2 -> println("Summer")
+        3 -> {
+            println("Fall")
+            println("Autumn")
+        }
+        4 -> println("Winter")
+        else -> println("Invalid Season")
+    }
 
+    var month = 12
+    when (month) {
+        in 3..5 -> println("Spring")
+        in 6..8 -> println("Summer")
+        in 9..11 -> println("Fall")
+        12, 1, 2 -> println("Winter")
+    }
+
+    var x : Any = 13.37F
+    when(x) {
+        is Int -> println("$x is an Int")
+        is Double -> println("$x is a Double")
+        is String -> println("$x is a String")
+        is Float -> println("$x is a float")
+        else -> println("$x is none of the above")
+    }
 
 
 }
