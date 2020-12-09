@@ -14,10 +14,10 @@ fun main() {
     val myName = "Jon"
 
     // string concatenation
-    println("Hello " + myName)
+    // println("Hello " + myName)
 
     // or I can use template
-    println("Hello $myName")
+    // println("Hello $myName")
 
     // type int 32 bit
     val myAge = 30
@@ -52,13 +52,38 @@ fun main() {
     val lastCharInString = myStr[myStr.length - 1]
 
     // string concatenation
-    println("First character: " + firstCharInString)
+    // println("First character: " + firstCharInString)
     // template
-    println("First character: $firstCharInString")
+    // println("First character: $firstCharInString")
 
     // string concatenation
-    println("Last character: " + lastCharInString)
+    // println("Last character: " + lastCharInString)
     // template
-    println("Last character: $lastCharInString")
+    // println("Last character: $lastCharInString")
+
+    // Arithmetic operators (+, -, *, /, %)
+    var result = 5+3
+    // result = result / 2
+    result /= 2 // --> 4
+    result *= 2 //--> 16
+    result += 2 //--> 10
+    result -= 2 //--> 6
+    result %= 2 // --> 0
+    val a = 5.0
+    val b = 3
+    // converts value to integer .toInt()
+    result = (a / b).toInt() //--> 1
+    var resultDouble: Double
+    resultDouble = a / b // --> 1.6666666667
+    print(resultDouble)
+
+
+
+
+
+
+
+
+
 
 }
