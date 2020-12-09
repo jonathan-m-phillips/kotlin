@@ -62,7 +62,7 @@ fun main() {
     // println("Last character: $lastCharInString")
 
     // Arithmetic operators (+, -, *, /, %)
-    var result = 5+3
+    var result = 5 + 3
     // result = result / 2
     result /= 2 // --> 4
     result *= 2 //--> 16
@@ -79,35 +79,57 @@ fun main() {
 
 
     // Comparison Operators
-    val isEqual = 5==3 // --> false
-    println("isEqual is $isEqual")
+    val isEqual = 5 == 3 // --> false
+    // println("isEqual is $isEqual")
 
-    val isNotEqual = 5!=5 // --> false
-    println("isNotEqual is $isNotEqual")
+    val isNotEqual = 5 != 5 // --> false
+    // println("isNotEqual is $isNotEqual")
 
     // new way to write comparison in print line
-    println("is5Greater3 ${5 > 3}")
-    println("is5Greater3 ${-5 > 3}")
-    println("is5LowerEqual3 ${5 <= 3}")
+    // println("is5Greater3 ${5 > 3}")
+    // println("is5Greater3 ${-5 > 3}")
+    // println("is5LowerEqual3 ${5 <= 3}")
 
     // Assignment Operators
     var myNum = 5
     myNum += 3
     myNum *= 4
-    println("myNum is $myNum")
+    // println("myNum is $myNum")
 
     // incremented and decrementing operators (++, --)
-    myNum++
-    println("myNum is $myNum")
-    println("myNum is ${myNum++}")
-    println("myNum is ${++myNum}")
-    myNum--
-    println("myNum is $myNum")
-    println("myNum is ${myNum--}")
-    println("myNum is ${--myNum}")
+    // myNum++
+    // println("myNum is $myNum")
+    // println("myNum is ${myNum++}")
+    // println("myNum is ${++myNum}")
+    // myNum--
+    // println("myNum is $myNum")
+    // println("myNum is ${myNum--}")
+    // println("myNum is ${--myNum}")
+
+    val heightPerson1 = 72 // inches
+    val heightPerson2 = 70 // inches
+
+    // writing if else statement for a fighter
+    if (heightPerson1 > heightPerson2) {
+        println("use raw force")
+    } else if (heightPerson1 == heightPerson2) {
+        println("use your power technique 1337")
+    } else {
+        println("use technique")
+    }
 
 
+    val age = 17
 
+    if (age >= 21) {
+        println("now you may drink")
+    } else if (age >= 18){
+        println("you may vote now")
+    } else if (age >= 16) {
+        println("you may drive now")
+    } else {
+        println("you are too young")
+    }
 
 
 
