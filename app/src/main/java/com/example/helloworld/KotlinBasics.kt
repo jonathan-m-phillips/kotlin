@@ -90,6 +90,22 @@ fun main() {
     println("is5Greater3 ${-5 > 3}")
     println("is5LowerEqual3 ${5 <= 3}")
 
+    // Assignment Operators
+    var myNum = 5
+    myNum += 3
+    myNum *= 4
+    println("myNum is $myNum")
+
+    // incremented and decrementing operators (++, --)
+    myNum++
+    println("myNum is $myNum")
+    println("myNum is ${myNum++}")
+    println("myNum is ${++myNum}")
+    myNum--
+    println("myNum is $myNum")
+    println("myNum is ${myNum--}")
+    println("myNum is ${--myNum}")
+
 
 
 
