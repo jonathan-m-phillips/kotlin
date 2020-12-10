@@ -2,27 +2,40 @@ package com.example.helloworld
 
 fun main() {
 
-    val jon = Person("Jon", "Phillips")
-    val john = Person()
-    val johnPeterson = Person(lastName = "Peterson")
-
-    val iPhoneX = MobilePhone("iOS", "Apple", "iPhone X")
-    val googlePixel4 = MobilePhone("Android", "Google", "Pixel 4")
+    // Creating instance of class
+    val jon = Person("Jon", "Phillips", 30)
+    jon.hobby = "writing code"
+    jon.age = 31
+    jon.stateHobby()
 
 }
+
 
 class Person (firstName: String = "John", lastName: String = "Doe"){
 
+    // Member variable - Properties
+    var age : Int? = null
+    var hobby : String? = "watching Netflix"
+    var firstName : String? = null
+
     // Initializer Block
     init {
+        this.firstName = firstName
         println("Initialized a new Person object with " +
                 "firstName = $firstName and lastName = $lastName")
     }
-}
 
-class MobilePhone (osName: String, brand: String, model: String){
+    //Member secondary Constructor
+    constructor(firstName: String = "John", lastName: String = "Doe", age: Int)
+        : this(firstName, lastName) {
+            this.age = age
+        println("Initialized a new Person object with " +
+                "firstName = $firstName, lastName = $lastName, and age $age")
+        }
 
-    init {
-        println("$osName - $brand $model")
+    // Member functions - Methods
+    fun stateHobby() {
+        println("$firstName\'s hobby is $hobby")
     }
+
 }
